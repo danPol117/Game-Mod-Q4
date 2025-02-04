@@ -631,6 +631,8 @@ void rvWeapon::Spawn ( void ) {
 	spread		= (gameLocal.IsMultiplayer()&&spawnArgs.FindKey("spread_mp"))?spawnArgs.GetFloat ( "spread_mp" ):spawnArgs.GetFloat ( "spread" );
 	nextAttackTime = 0;
 
+	//my addition
+
 	// Zoom
 	zoomFov = spawnArgs.GetInt( "zoomFov", "-1" );
 	zoomGui  = uiManager->FindGui ( spawnArgs.GetString ( "gui_zoom", "" ), true );
